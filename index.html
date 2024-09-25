@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Hinal Vala</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background */
+            color: #f8f9fa; /* Light text color */
+            font-family: 'Arial', sans-serif; /* Font style */
+        }
+
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 56px); /* Adjust height for navbar */
+            text-align: center;
+            background: url('image/hv.jpeg') no-repeat center center/cover;
+            padding: 20px; /* Padding for better spacing */
+        }
+
+        #home .container {
+            max-width: 800px; /* Increased width of the container */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 30px; /* Increased padding for content */
+            border-radius: 10px; /* Rounded corners */
+            text-align: justify; /* Justify text */
+            display: flex; /* Enable flexbox */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+
+        #home h1 {
+            font-size: 2.5rem; /* Larger heading size */
+            margin-bottom: 20px; /* Space below heading */
+            text-transform: uppercase; /* Uppercase heading */
+            letter-spacing: 2px; /* Letter spacing */
+        }
+
+        #home p {
+            font-size: 1.2rem; /* Increased font size for paragraphs */
+            line-height: 1.6; /* Better line spacing */
+            margin-bottom: 20px; /* Space below paragraphs */
+        }
+
+        footer {
+            background-color: #343a40; /* Dark footer background */
+            padding: 20px 0; /* Padding for footer */
+            color: #f8f9fa; /* Light footer text */
+        }
+
+        .btn-primary {
+            background-color: #00bcd4; /* Custom button color */
+            border: none; /* No border */
+        }
+
+        .btn-primary:hover {
+            background-color: #0097a7; /* Darker button on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hinal Vala</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello, I'm Hinal Vala, a passionate Unity Game Developer based in Ahmedabad, India, with 2.5 years of experience in crafting immersive 2D and 3D games. My expertise lies in designing engaging gameplay mechanics, integrating advanced features, and optimizing user experiences. Dive in to explore my journey, projects, and the skills that drive my passion for game development.</p>
+            <a href="projects.html" class="btn btn-primary">Explore My Work</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Hinal Vala. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
