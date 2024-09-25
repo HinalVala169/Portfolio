@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+section {
+    padding: 60px 0;
+    background-color: #000; /* Ensure sections have a black background */
+}
+
+footer {
+    background-color: #000; /* Black footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+}
+
+/* Additional styles for your components */
+.navbar {
+    background-color: #343a40; /* Dark background for navbar */
+}
+
+.nav-link {
+    color: #ffffff; /* White text for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav-link:hover {
+    background-color: #495057; /* Darker background on hover */
+    color: #ffffff; /* Keep text white on hover */
+}
+
+.nav-item.active .nav-link, .nav-link:focus {
+    background-color: #495057; /* Darker background for active link */
+    color: #ffffff; /* White text for active link */
+    font-weight: bold; /* Make active link bold */
+    border-radius: 5px; /* Rounded corners for active link */
+    outline: none; /* Remove focus outline */
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px); /* Full height minus navbar height */
+    text-align: center;
+
+}
+
+#home .container {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 56px); /* Full height minus navbar height */
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 600px;
+}

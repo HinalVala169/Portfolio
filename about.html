@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Hinal Vala</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #about {
+            padding: 60px 0;
+            flex: 1;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .btn-download {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px; /* Add margin for spacing */
+        }
+        .btn-download:hover {
+            background-color: #0056b3;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-content h1 {
+            margin-bottom: 20px;
+        }
+        .about-content p {
+            max-width: 800px;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        .company-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .company-logos img {
+            max-height: 80px;  /* Set a maximum height for the logos */
+            max-width: 150px;  /* Set a maximum width for the logos */
+            object-fit: contain;
+            border: 1px solid #fff; /* Optional: Add border for better visibility */
+            padding: 5px; /* Optional: Add padding around logos */
+            background-color: rgba(255, 255, 255, 0.1); /* Optional: Add background for logos */
+            border-radius: 5px; /* Optional: Round corners */
+        }
+        footer {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hinal Vala</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="text-center">
+        <div class="container about-content">
+            <img src="image/Hinal (1).jpg" alt="Hinal Vala" class="profile-pic mb-4">
+            <h1>About Me</h1>
+            <p>
+                I am a dedicated Unity Game Developer with a strong background in both 2D and 3D game development. 
+                I hold a Bachelor's degree in Computer Science and Engineering from the Institute of Technology Aditya Silver Oak, and a Diploma in Computer Engineering from L.J Polytechnic. 
+                Over the past 2.5 years, I have honed my skills in crafting dynamic gameplay, integrating APIs for real-time game mechanics, and creating visually appealing interfaces. 
+                My journey includes significant contributions to games like 'Candy Mania,' 'Blackout,' 'Scratch It,' and 'Juntos,' developed during my tenure at Codehabit and Yudiz Solutions Pvt Ltd.
+                My technical skills include proficiency in Unity3D, C#, HTML and CSS. 
+                I am also experienced in using tools like Visual Studio, Git, and GitHub.
+            </p>
+            <a href="https://drive.google.com/file/d/1LTXs3uNJic2sJ8K147G01YsSIHAiZpZB/view?usp=drive_link" class="btn btn-download">Download My Resume</a>
+
+            <h2 class="mt-4">Companies I've Worked With</h2> <!-- Added heading for logos -->
+            <div class="company-logos mt-2">
+                <img src="image/Codehabit.png" alt="Codehabit">
+                <img src="image/Yudiz.png" alt="Yudiz Solutions Pvt Ltd">
+                <img src="image/feeltech.jfif" alt="Feeltech Digivation Pvt. Ltd.">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Hinal Vala. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

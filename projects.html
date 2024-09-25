@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Hinal Vala</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-bottom: 50px; /* Add padding to the bottom of the page */
+        }
+        .project-card {
+            background-color: #222;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0; /* Vertical margin for better spacing */
+            transition: transform 0.2s;
+            height: 350px; /* Height for project card */
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: space-between; /* Space out the content */
+            overflow: hidden; /* Prevent overflow */
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px; /* Height for the image */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 5px;
+            margin-bottom: 10px; /* Space below the image */
+        }
+        .project-info {
+            flex-grow: 1; /* Allow this section to grow and fill space */
+            display: flex;
+            flex-direction: column; /* Stack title, description, and button vertically */
+            justify-content: space-between; /* Space out the content */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text */
+        }
+        .project-info h2, .project-info p {
+            margin: 5px 0; /* Adjust margin for better spacing */
+        }
+        .project-info p {
+            max-height: 60px; /* Limit height for descriptions */
+            overflow: hidden; /* Hide overflow text */
+            text-overflow: ellipsis; /* Add ellipsis for overflow */
+        }
+        .project-info a {
+            margin-top: 10px; /* Space above the button */
+            margin-bottom: 0; /* No margin below the button */
+        }
+        .youtube-videos {
+            display: flex;
+            flex-direction: column; /* Stack videos vertically */
+            margin-top: 40px; /* Increased margin for spacing */
+            align-items: center; /* Center items */
+        }
+        .youtube-video {
+            margin: 20px 0; /* Vertical margin for each video */
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%; /* Full width */
+            max-width: 800px; /* Set a maximum width */
+            display: flex; /* Use flex to align video and description */
+            flex-direction: column; /* Stack content vertically */
+            background-color: #333; /* Background color for better contrast */
+            padding: 15px; /* Add padding */
+        }
+        .youtube-video iframe {
+            width: 100%; /* Full width for better responsiveness */
+            height: 315px; /* Adjust height as needed */
+            margin-bottom: 15px; /* Space between video and text */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .video-info {
+            text-align: center; /* Center text */
+        }
+        .video-info h3 {
+            margin: 0 0 10px; /* Margin adjustments */
+            font-size: 1.5em; /* Adjust title font size */
+        }
+        .video-info p {
+            margin: 0; /* Remove default margin */
+            font-size: 1em; /* Adjust font size */
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                height: auto; /* Allow card height to adjust based on content */
+            }
+            .youtube-video {
+                max-width: 100%; /* Allow video to use full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hinal Vala</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="text-center">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've worked on:</p>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="project-card">
+                        <img src="image/Candy.png" alt="Project 1" class="project-image">
+                        <div class="project-info">
+                            <h2>Candy Mania</h2>
+                            <p>Dynamic Pattern Matching Game.</p>
+                            <a href="https://bingo.codehabbit.com/" class="btn btn-primary">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="project-card">
+                        <img src="image/Slingo.PNG" alt="Project 1" class="project-image">
+                        <div class="project-info">
+                            <h2>Slingo</h2>
+                            <p>Slingo: Bingo meets Slots.</p>
+                            <a href="https://slingo-seven.vercel.app/" class="btn btn-primary">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="project-card">
+                        <img src="image/ScratchIt.png" alt="Project 2" class="project-image">
+                        <div class="project-info">
+                            <h2>ScratchIt</h2>
+                            <p>Fun Learning Game.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.Codehabit.ScratchIt" class="btn btn-primary">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="project-card">
+                        <img src="image/veeksha.PNG" alt="Project 3" class="project-image">
+                        <div class="project-info">
+                            <h2>Veeksha</h2>
+                            <p>3D Experiential Learning App.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.ftd.veeksha" class="btn btn-primary">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mt-5">Watch My Work</h2>
+            <p>Check out these videos showcasing my projects:</p>
+            <div class="youtube-videos">
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/7WcCgGQhG60" frameborder="0" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h3>Juntos</h3>
+                        <p>Juntos features two modes: player vs. computer and player vs. player. Form words using letters displayed on the sides of the screen to score points and challenge friends or the AI!</p>
+                    </div>
+                </div>
+                <!-- Add more video containers as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Hinal Vala. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
